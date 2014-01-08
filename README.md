@@ -16,7 +16,7 @@ This is my personal boilerplate template for the .gitconfig file with useful ali
 * ``git abort`` - resets all uncomitted changes and files by executing ``reset --hard HEAD``
 * ``git undo`` - undos last commit with ``reset HEAD~1``
 * ``git recommit`` - execute this for ammending teh commit message
-* ``git rem - enlists remotes by executing ``remote -v`` 
+* ``git rem`` - enlists remotes by executing ``remote -v`` 
 * ``git conflicts`` - shows list of files that have a merge conflict
 * ``git unstage [file]`` - removes file from next commit
 * ``git abort`` - hard resets all uncommitted changes 
