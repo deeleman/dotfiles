@@ -1,0 +1,39 @@
+[alias]
+	st = status
+	co = checkout
+        cm = commit -a -m
+        b = branch
+        l = log
+        up = pull
+        p = push origin
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        new = diff --cached
+        abort = reset --hard HEAD
+        undo = reset HEAD~1
+        recommit = commit --amend
+        rem = remote -v 
+        here = status .
+[user]
+	name = Pablo Deeleman
+	email = deeleman@gmail.com
+[color]
+        ui = true
+        branch = auto
+        diff = auto
+        status = auto
+
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red
+        new = cyan
+
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
