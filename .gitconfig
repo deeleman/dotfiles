@@ -1,9 +1,13 @@
 [alias]
-	st = status
+	st = status -s
 	co = checkout
-        cm = commit -a -m
+        cb = checkout -b
+        ca = commit -am
+        cm = commit -m
         b = branch
-        l = log
+        bs = for-each-ref --sort=-committerdate refs/heads/
+        df = diff --color --color-words --abbrev
+        l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
         up = pull
         p = push origin
         hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
