@@ -16,6 +16,8 @@
         undo = reset HEAD~1
         recommit = commit --amend
         rem = remote -v 
+        conflicts = diff --name-only --diff-filter=U
+        unstage = reset HEAD --
         here = status .
 [user]
 	name = Pablo Deeleman
