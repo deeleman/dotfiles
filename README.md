@@ -5,9 +5,13 @@ This is my personal boilerplate template for the .gitconfig file with useful ali
 ## Aliases
 * ``git st`` - shows files status
 * ``git co`` - performs a ``checkout`` command
-* ``git cm`` - adds any non-versioned file and performs a commit: ``commit -a -m`` 
+* ``git cb`` - performs a ``checkout`` command and creates the new branch on the fly
+* ``git ca`` - adds any non-versioned file and performs a commit: ``commit -a -m``
+* ``git cm`` - performs a commit expecting a message: ``commit -m`` 
 * ``git b`` - performs a ``branch``command
-* ``git l`` - retrieves the git log
+* ``git bs`` - lists all branches sorted by commit date (including the last commit ref)
+* ``git df`` - performs a DIFF command with a colourful output
+* ``git l`` - retrieves the git log in a colourful format
 * ``git up`` - performs a ``pull``command
 * ``git p`` - performs a ``push``command and expects the origin data to be appended
 * ``git hist`` - beautified log, equivalent to ``- log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short``
@@ -18,8 +22,6 @@ This is my personal boilerplate template for the .gitconfig file with useful ali
 * ``git rem`` - enlists remotes by executing ``remote -v`` 
 * ``git conflicts`` - shows list of files that have a merge conflict
 * ``git unstage [file]`` - removes file from next commit
-* ``git abort`` - hard resets all uncommitted changes 
-* ``git new`` - shows diff for files stages to be commited only
 * ``git here`` - shows only changes to files in current directory
 
 ## Colored Output
