@@ -23,6 +23,7 @@ This is my personal boilerplate template for the .gitconfig file with useful ali
 * ``git conflicts`` - shows list of files that have a merge conflict
 * ``git unstage [file]`` - removes file from next commit
 * ``git here`` - shows only changes to files in current directory
+* * ``git unpushed`` - enlists unpushed local commits
 
 ## Colored Output
 * Adds colored output to `git branch`
