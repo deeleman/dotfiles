@@ -19,6 +19,7 @@
         conflicts = diff --name-only --diff-filter=U
         unstage = reset HEAD --
         here = status .
+        unpushed = log --branches --not --remotes
 [user]
 	name = Pablo Deeleman
 	email = deeleman@gmail.com
