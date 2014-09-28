@@ -3,7 +3,7 @@
 	co = checkout
     cb = checkout -b
     cm = commit -m
-    ca = commit --all -m
+    ca = commit -a -m
     b = branch
     bs = for-each-ref --sort=-committerdate refs/heads/
     df = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
