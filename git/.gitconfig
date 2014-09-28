@@ -1,16 +1,17 @@
 [alias]
-	st = status -s
+	st = status -s -b
 	co = checkout
         cb = checkout -b
-        ca = commit -am
+        ca = commit -a -m
         cm = commit -m
         b = branch
         bs = for-each-ref --sort=-committerdate refs/heads/
         df = diff --color --color-words --abbrev
         l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        ll = log --pretty=format:\"%Cred%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset\" --graph --date=default
         up = pull
+        upr = pull --rebase
         p = push origin
-        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         new = diff --cached
         abort = reset --hard HEAD
         undo = reset HEAD~1
@@ -19,7 +20,6 @@
         conflicts = diff --name-only --diff-filter=U
         unstage = reset HEAD --
         here = status .
-        unpushed = log --branches --not --remotes
 [user]
 	name = Pablo Deeleman
 	email = deeleman@gmail.com
