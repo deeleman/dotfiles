@@ -8,7 +8,8 @@ echo
 dotfiles="$HOME/Developer/dotfiles"
 mkdir -pv $dotfiles
 
-cp -rf ./ $dotfiles
+cp -rf ./git $dotfiles
+cp -rf ./bash $dotfiles
 
 cd $dotfiles
 
@@ -30,6 +31,11 @@ link() {
 }
 
 for location in $(find git -name '.*'); do
+  file="${location##*/}"
+  link "$dotfiles/$location" "$HOME/$file"
+done
+
+for location in $(find bash -name '.*'); do
   file="${location##*/}"
   link "$dotfiles/$location" "$HOME/$file"
 done
