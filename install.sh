@@ -6,7 +6,7 @@ echo -e "\e[1m*** The installation script will copy your dotfiles in a location 
 echo
 
 dotfiles="$HOME/Developer/dotfiles"
-mkdir -pv $dir
+mkdir -pv $dotfiles
 
 cp -rf ./ $dotfiles
 
