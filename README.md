@@ -22,6 +22,7 @@ This is my personal boilerplate template for the .gitconfig file with useful ali
 * ``git rem`` - enlists remotes by executing ``remote -v``
 * ``git conflicts`` - shows list of files that have a merge conflict
 * ``git unstage [file]`` - removes file from next commit
+* ``git pending`` - lists all unpushed commits made so far
 * ``git here`` - shows only changes to files in current directory
 
 ## Colored Output

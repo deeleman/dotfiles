@@ -18,6 +18,7 @@
     rem = remote -v
     conflicts = diff --name-only --diff-filter=U
     unstage = reset HEAD --
+	pending = log origin/master..HEAD
     here = status .
 
 [user]
