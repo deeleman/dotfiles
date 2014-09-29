@@ -3,6 +3,7 @@
 ## Dev Envs - Mostly Vagrant
 .vagrant/
 Vagrantfile
+vagrant
 
 ## Node.js
 lib-cov
