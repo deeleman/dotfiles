@@ -10,7 +10,6 @@ These are my personal boilerplate templates for GIT and BASH config files with u
 * ``git co`` - performs a ``checkout`` command
 * ``git cb`` - performs a ``checkout`` command and creates the new branch on the fly
 * ``git cm`` - performs a commit expecting a message: ``commit -m``
-* ``git ca`` - adds all unstaged files and performs a commit expecting a message: ``commit --all -m``
 * ``git b`` - performs a ``branch``command
 * ``git bs`` - lists all branches sorted by commit date (including the last commit ref)
 * ``git df`` - performs a DIFF command with a colorful output
