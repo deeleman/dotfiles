@@ -40,9 +40,10 @@ Remarkable parts fo the GIT config file were borrowed from Jack Lukic's [Git-Ali
 
 If you're on a Mac/ you can leverage the install script included, mostly inspired by the one [provided by Paul Miller](https://github.com/paulmillr/dotfiles).
 
-For doing so you will need to execute the following command with ```sudo``` permission at the root folder of your cloned repo. It will copy the dotfiles in a location inside your ``$HOME`` directory and will *symlink* those where required. **Please note:** You will need execute permissions on the install file.
+For doing so you will need to execute the following command with ```sudo``` permission at the root folder of your cloned repo. It will copy the dotfiles in a location inside your ``$HOME`` directory and will *symlink* those where required. **Please note:** You will need execute permissions on the install file. After the install, do not forget to run the ```source``` command to update the terminal in use.
 
 ```
 $ chmod +x ./install.sh
 $ sudo ./install.sh
+$ source $HOME/.bash_profile
 ```
