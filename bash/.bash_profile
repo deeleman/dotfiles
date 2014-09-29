@@ -30,10 +30,23 @@ On_White='\e[47m'       # White
 
 NC="\e[m"               # Color Reset
 
-# Personal aliases
+# Desktop Programs
+alias preview="open -a '$PREVIEW'"
+alias safari="open -a safari"
+alias firefox="open -a firefox"
+alias chrome="open -a google\ chrome"
+alias f='open -a Finder '
+alias textedit='open -a TextEdit'
+alias skype='open -a Skype'
 
+if [ -s /usr/bin/firefox ] ; then
+  unalias firefox
+fi
+
+# Directory operation aliases
 alias home='cd ~'
 alias ..='cd ..'
+alias up='cd ..'
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -45,18 +58,26 @@ alias h='history'
 alias j='jobs -l'
 alias which='type -a'
 
+# Get rid of those pesky .DS_Store files recursively
+alias dsclean='find . -type f -name .DS_Store -delete'
+
+# Flush your dns cache
+alias flush='dscacheutil -flushcache'
+
+# Show/hide hidden files (for Mac OS X Mavericks)
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles TRUE"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE"
+
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
-
 
 alias du='du -kh'    # Makes a more readable output.
 alias df='df -kTh'
 
 alias ax='chmod a+x'
 
-# Add colors for filetype and  human-readable sizes by default on 'ls':
-alias ls='ls -h --color'
+alias all='ls -a'          #  Lists all files, including hidden files
 alias lx='ls -lXB'         #  Sort by extension.
 alias lk='ls -lSr'         #  Sort by size, biggest last.
 alias lt='ls -ltr'         #  Sort by date, most recent last.

@@ -40,5 +40,6 @@ for location in $(find bash -name '.*'); do
   link "$dotfiles/$location" "$HOME/$file"
 done
 
+
 echo "-------------------------------------------------------"
 echo
