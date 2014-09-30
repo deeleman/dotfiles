@@ -80,12 +80,11 @@ These are my personal boilerplate templates for GIT and BASH config files with u
 
 ## 3. Installation
 
-If you're on a Mac/ you can leverage the install script included. For doing so you will need to execute the following command with ```sudo``` permission at the root folder of your cloned repo. It will copy the dotfiles in a location inside your ``$HOME`` directory and will *symlink* those where required. **Please note:** You will need execute permissions on the install file. After the install, do not forget to run the ```source``` command to update the terminal in use.
+If you're on a Mac/ you can leverage the install script included. Please be aware that the install script will require your ```sudo``` password at some point of the installation process. The script will copy the GIT and BASH
+dorfiles of your repo to the $HOME directory and will symlink the copied files straight away to make them available immediately, onc executed a ``source`` command.
 
 ```
-$ chmod +x ./install.sh
-$ sudo ./install.sh
-$ source $HOME/.bash_profile
+$ ./install.sh
 ```
 
 ## 4. Acknowledgements
