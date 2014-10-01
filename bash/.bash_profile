@@ -91,3 +91,10 @@ export GREP_COLOR='1;31' # green for matches
 export CLICOLOR=230
 export HISTFILESIZE=3000
 export HISTCONTROL=ignoredups
+
+# Special handles
+
+command_not_found_handle () {
+  echo -e "\e[1;31m$0: ARE YOU STILL ASLEEP??!! '$1' does not exist!\e[0;0m";
+  return 127; #return bash's error code for command not found
+}
