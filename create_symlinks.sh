@@ -5,6 +5,7 @@ mkdir -pv $dotfiles
 
 cp -rf ./git $dotfiles
 cp -rf ./bash $dotfiles
+cp -rf ./vim $dotfiles
 
 cd $dotfiles
 
@@ -31,6 +32,11 @@ for location in $(find git -name '.*'); do
 done
 
 for location in $(find bash -name '.*'); do
+  file="${location##*/}"
+  link "$dotfiles/$location" "$HOME/$file"
+done
+
+for location in $(find vim -name '.*'); do
   file="${location##*/}"
   link "$dotfiles/$location" "$HOME/$file"
 done

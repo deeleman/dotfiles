@@ -34,6 +34,8 @@ These are my personal boilerplate templates for GIT and BASH config files with u
 
 ## 2. BASH
 
+In addition to the following shortcuts the install script will save a ``.vimrc`` resource file with coloured syntax enabled for VIM.
+
 ### 2.a. Desktop Program Launchers
 
 * ``preview`` - Open a preview window
